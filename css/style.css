@@ -182,6 +182,7 @@ float:right;
   width: 100px;
   height: 100px;
   position: absolute;
+  cursor: pointer;
 }
 .main-wrap > .left-btn{
   left:300px;
@@ -224,13 +225,15 @@ float:right;
   font-size:14px;
   line-height: 30px;
 }
-.menu-wrap > .notice-box > .title-box > .plus-tap{
+.title-box > .plus-tap{
   width: 19px;
   height: 19px;
   position: relative;
   margin-top: 5px;
+  transition: 0.5s;
+  cursor: pointer;
 }
-.menu-wrap > .notice-box > .title-box > .plus-tap > .line01{
+.title-box > .plus-tap > .line01{
   position: absolute;
   width: 12px;
   height: 2px;
@@ -239,7 +242,7 @@ float:right;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.menu-wrap > .notice-box > .title-box > .plus-tap > .line02{
+.title-box > .plus-tap > .line02{
   position: absolute;
   width: 2px;
   height: 12px;
@@ -248,20 +251,28 @@ float:right;
   left: 50%;
   transform: translate(-50%,-50%);
 }
+.title-box > .plus-tap:hover{
+  transform: rotate(-135deg);
+}
+
 .menu-wrap > .portfolio-box{
   width: calc(1250px / 3);
   height: 150px;
   background-color: rgb(123, 237, 100);
   margin-right: 25px;
 }
+.menu-wrap > .portfolio-box > .content-box > .content01 {
+  width:188px;
+  margin-right:20px;
+}
 .menu-wrap > .portfolio-box > .content-box > .content01 > .img{
-  width: 900px;
-  height: 150px;
-  background-color: red;
-  background-repeat: no-repeat ;
-  background-position: center ;
-  background-size : cover ;
-  
+  width: 100%;
+}
+.menu-wrap > .portfolio-box > .content-box > .content02 {
+  width: 188px;
+}
+.menu-wrap > .portfolio-box > .content-box > .content02 > .img{
+  width: 100%;
 }
 .menu-wrap > .contact-box{
   width: calc(1250px / 3);
